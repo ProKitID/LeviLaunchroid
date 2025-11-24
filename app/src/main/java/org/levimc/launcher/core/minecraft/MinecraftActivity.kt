@@ -47,6 +47,7 @@ class MinecraftActivity : MainActivity() {
             }
 
             gameManager = GamePackageManager.getInstance(applicationContext, version)
+            Main.onLoad(this)
 
             try {
                 System.loadLibrary("preloader")
@@ -77,6 +78,7 @@ class MinecraftActivity : MainActivity() {
     }
 
     override fun onDestroy() {
+        Main.onUnload(this)
         MinecraftActivityState.onDestroyed()
         super.onDestroy()
 
