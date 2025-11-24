@@ -9,6 +9,7 @@ import com.mojang.minecraftpe.MainActivity
 import org.levimc.launcher.core.versions.GameVersion
 import org.levimc.launcher.settings.FeatureSettings
 import java.io.File
+import id.my.alvinq.modsplus.Main
 
 class MinecraftActivity : MainActivity() {
 
